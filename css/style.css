@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #08A6E4;
+    --secondary-color: #FB3B64;
+    --auxiliary-color: #55DFB4;
+    --black-text-color: #000000;
+    --gray-details-color: #A5A5A5;
+    --white-color: #ffffff;
+    --form-text-color: #707070;
+}
+
+header {
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.page-logo {
+    color: var(--primary-color);
+    text-decoration: none;
+    font: normal normal 300 32px/37px 'Raleway';
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list__item a {
+    margin-left: 95px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--gray-details-color);
+    padding-bottom: 30px;
+    text-decoration: none;
+    font: normal normal bold 11px/15px 'Open Sans';
+
+}
+
+.nav-list__item a:hover {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.page-banner {
+    position: relative;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px;
+}
+
+.page-banner::before {
+    content: "";
+    background-image: url('../images/Background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.page-banner h1 {
+    font: normal normal normal 49px/57px 'Raleway';
+    color: var(--black-text-color);
+}
+
+.page-banner p {
+    text-align: center;
+    font: normal normal normal 16px/22px 'Open Sans';
+    letter-spacing: 0;
+    padding-top: 20px;
+}
+
+.banner-button {
+    padding-top: 40px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.btn-header {
+    background: var(--primary-color) 0 0 no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
+    padding: 22px 160px;
+}
