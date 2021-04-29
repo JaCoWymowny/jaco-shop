@@ -60,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 130px;
+    margin-top: 130px;
 }
 
 .page-banner::before {
@@ -68,7 +68,6 @@ header {
     background-image: url('../images/Background.png');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -103,3 +102,61 @@ header {
     border-radius: 40px;
     padding: 22px 160px;
 }
+
+.page-achiev h2 {
+    font: normal normal normal 36px/42px Raleway;
+    letter-spacing: 0;
+    color: var(--black-text-color);
+    text-align: center;
+}
+
+
+.achiev-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.achiev-content span {
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 6px;
+    color: #000000;
+}
+
+.achiev-content p {
+    text-align: center;
+    font: normal normal normal 16px/19px Raleway;
+    letter-spacing: 0;
+    color: #A5A5A5;
+    padding: 20px;
+}
+
+.achiev-content__theme {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+}
+
+.circle-type1 {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.circle-type2 {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.circle-type3 {
+    background-color: var(--auxiliary-color);
+    border-radius: 50%;
+}
+
