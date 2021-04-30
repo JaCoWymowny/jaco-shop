@@ -122,22 +122,22 @@ header {
     font: normal normal 800 20px/24px Raleway;
     letter-spacing: 6px;
     color: #000000;
+    margin: 14px 0;
 }
 
 .achiev-content p {
     text-align: center;
-    font: normal normal normal 16px/19px Raleway;
+    font: normal 16px/19px Raleway;
     letter-spacing: 0;
     color: #A5A5A5;
-    padding: 20px;
 }
 
 .achiev-content__theme {
-    max-width: 150px;
+    max-width: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding: 120px 0;
 }
 
 .circle {
@@ -148,15 +148,56 @@ header {
 .circle-type1 {
     background-color: var(--secondary-color);
     border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.circle-type1::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/person.png");
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 44px;
+    z-index: -1;
+    left: 50%;
 }
 
 .circle-type2 {
     background-color: var(--primary-color);
     border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.circle-type2::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/eye.png");
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 66px;
+    z-index: -1;
+    left: 25%;
+    top: 25%;
 }
 
 .circle-type3 {
     background-color: var(--auxiliary-color);
     border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.circle-type3::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/catalog.png");
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 52px;
+    z-index: -1;
+    left: 50%;
+    top: 10%;
 }
 
