@@ -104,8 +104,7 @@ header {
 }
 
 .page-achiev h2 {
-    font: normal normal normal 36px/42px Raleway;
-    letter-spacing: 0;
+    font: normal 36px/42px Raleway;
     color: var(--black-text-color);
     text-align: center;
 }
@@ -119,7 +118,7 @@ header {
 
 .achiev-content span {
     text-align: center;
-    font: normal normal 800 20px/24px Raleway;
+    font: normal 800 20px/24px Raleway;
     letter-spacing: 6px;
     color: #000000;
     margin: 14px 0;
