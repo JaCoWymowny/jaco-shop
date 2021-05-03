@@ -386,3 +386,24 @@ header {
     border: 4px solid var(--auxiliary-color);
     margin-top: auto;
 }
+
+.page-pricing {
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    width: 1266px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.pricing-content {
+    max-width: 372px;
+    width: 100%;
+}
+
+.checkmark li {
+
+}
+
