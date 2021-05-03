@@ -322,7 +322,6 @@ header {
 .specific-column {
     width: 55%;
     background-color: var(--white-color);
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
