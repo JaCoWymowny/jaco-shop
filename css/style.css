@@ -120,7 +120,7 @@ header {
     text-align: center;
     font: normal 800 20px/24px Raleway;
     letter-spacing: 6px;
-    color: #000000;
+    color: var(--white-color);
     margin: 14px 0;
 }
 
@@ -128,7 +128,7 @@ header {
     text-align: center;
     font: normal 16px/19px Raleway;
     letter-spacing: 0;
-    color: #A5A5A5;
+    color: var(--gray-details-color);
 }
 
 .achiev-content__theme {
