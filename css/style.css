@@ -10,7 +10,7 @@
     --gray-details-color: #A5A5A5;
     --white-color: #ffffff;
     --form-text-color: #707070;
-    --btn-color: #07ACE629;
+    --form-button-color: #07ACE629;
 }
 
 header {
@@ -669,7 +669,7 @@ header {
 
 .form__button {
     background: var(--primary-color) 0 0 no-repeat padding-box;
-    box-shadow: 5px 10px 14px var(--btn-color);
+    box-shadow: 5px 10px 14px var(--form-button-color);
     border-radius: 35px;
     padding: 19px 98px;
     font: normal bold 13px/18px Open Sans;
