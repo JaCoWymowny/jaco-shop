@@ -12,6 +12,7 @@
     --form-text-color: #707070;
     --form-button-color: #07ACE629;
     --footer-color: #F7F7F7;
+    --shadow-color: #00000029;
 }
 
 header {
@@ -685,6 +686,7 @@ header {
 footer {
     background: var(--footer-color);
     height: 7vw;
+    box-shadow: 0 -5px 40px var(--shadow-color);
 }
 
 .page-footer {
