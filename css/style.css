@@ -142,16 +142,16 @@ header {
 .circle {
     width: 65px;
     height: 65px;
-}
-
-.circle-type1 {
-    background-color: var(--secondary-color);
     border-radius: 50%;
     position: relative;
     z-index: 1;
 }
 
-.circle-type1::after {
+.circle-dark {
+    background-color: var(--secondary-color);
+}
+
+.circle-dark::after {
     content: "";
     position: absolute;
     background-image: url("../images/person.png");
@@ -162,14 +162,11 @@ header {
     left: 50%;
 }
 
-.circle-type2 {
+.circle-middle {
     background-color: var(--primary-color);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
 }
 
-.circle-type2::after {
+.circle-middle::after {
     content: "";
     position: absolute;
     background-image: url("../images/eye.png");
@@ -181,14 +178,11 @@ header {
     top: 25%;
 }
 
-.circle-type3 {
+.circle-last {
     background-color: var(--auxiliary-color);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
 }
 
-.circle-type3::after {
+.circle-last::after {
     content: "";
     position: absolute;
     background-image: url("../images/catalog.png");
