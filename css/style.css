@@ -665,6 +665,7 @@ header {
     padding-left: 30px;
     font: normal 12px/17px Open Sans;
     color: var(--form-text-color);
+    cursor: pointer;
 }
 .form-buttons {
     display: flex;
