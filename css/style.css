@@ -11,6 +11,8 @@
     --white-color: #ffffff;
     --form-text-color: #707070;
     --form-button-color: #07ACE629;
+    --footer-color: #F7F7F7;
+    --shadow-color: #00000029;
 }
 
 header {
@@ -677,4 +679,48 @@ header {
     padding: 19px 98px;
     font: normal bold 13px/18px Open Sans;
     margin-top: 20px;
+}
+
+footer {
+    background: var(--footer-color);
+    height: 7vw;
+    box-shadow: 0 -5px 40px var(--shadow-color);
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-logo a {
+    font: normal 300 26px/30px Raleway;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer-logo p {
+    color: var(--gray-details-color);
+    font: normal 11px/15px Open Sans;
+}
+
+.footer-reference {
+    display: flex;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-left: 20px;
+}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+}
+
+.facebook {
+    background-image: url("../images/facebook.png");
 }
