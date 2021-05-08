@@ -383,3 +383,136 @@ header {
     border: 4px solid var(--auxiliary-color);
     margin-top: auto;
 }
+
+.pricing-box {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.pricing-box h2 {
+    font: normal 400 36px/42px Raleway;
+    margin-bottom: 50px;
+}
+
+.pricing-container {
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+.pricing-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 18px;
+    padding-top: 34px;
+    width: 100%;
+}
+
+.pricing-article li {
+    padding-bottom: 20px;
+}
+
+.pricing-article h3 {
+    font: normal bold 20px Raleway;
+}
+
+.pricing-style {
+    max-width: 372px;
+    height: 80%;
+}
+
+.secondary-color {
+    border-color: var(--secondary-color);
+}
+
+.secondary-color span {
+    color: var(--secondary-color);
+    font: normal 300 46px Open Sans;
+    margin-top: 14px;
+}
+
+.pricing-special {
+    border-color: var(--primary-color);
+    box-shadow: 5px 10px 27px #07ACE629;
+    max-width: 405px;
+}
+
+.pricing-special p {
+    font: normal bold 12px Raleway;
+    margin-top: 15px;
+}
+
+.pricing-special span {
+    color: var(--primary-color);
+    font: normal 300 46px Open Sans;
+    margin-top: 14px;
+}
+
+.pricing-special li {
+    padding-bottom: 25px;
+}
+
+.aux-color {
+    border-color: var(--auxiliary-color);
+}
+
+.aux-color span {
+    color: var(--auxiliary-color);
+    font: normal 300 46px Open Sans;
+    margin-top: 14px;
+}
+.aux-color p {
+    font: normal bold 12px Raleway;
+    margin-top: 15px;
+}
+
+.pricing-list {
+    list-style-type: none;
+}
+
+.list-padding1 {
+    padding: 50px 0;
+}
+
+.list-padding2 {
+    padding: 61px 0;
+}
+
+.package::before {
+    content: url("../images/Ckechmark-1.svg");
+    padding-right: 10px;
+}
+
+.no-choice::before {
+    content: url("../images/Close.svg");
+    padding-right: 10px;
+}
+
+.btn-pricing {
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 20px;
+    padding: 1px;
+    width: 40%;
+    font: normal bold 13px/41px Open Sans;
+    transform: translateY(23px);
+}
+
+.btn-prim-color {
+    background: var(--primary-color);
+}
+
+.btn-sec-color {
+    background: var(--secondary-color);
+}
+
+.btn-aux {
+    background: var(--auxiliary-color);
+}
