@@ -428,54 +428,54 @@ header {
 }
 
 .pricing-style {
-    border-color: var(--secondary-color);
     max-width: 372px;
     height: 80%;
 }
 
-.pricing-style span {
+.secondary-color {
+    border-color: var(--secondary-color);
+}
+
+.secondary-color span {
     color: var(--secondary-color);
     font: normal 300 46px Open Sans;
     margin-top: 14px;
 }
 
-.pricing-style2 {
+.pricing-special {
     border-color: var(--primary-color);
     box-shadow: 5px 10px 27px #07ACE629;
     max-width: 405px;
 }
 
-.pricing-style2 p {
+.pricing-special p {
     font: normal bold 12px Raleway;
     margin-top: 15px;
 }
 
-.pricing-style2 span {
+.pricing-special span {
     color: var(--primary-color);
     font: normal 300 46px Open Sans;
     margin-top: 14px;
 }
 
-.pricing-style2 li {
+.pricing-special li {
     padding-bottom: 25px;
 }
 
-.pricing-style3 {
+.aux-color {
     border-color: var(--auxiliary-color);
-    max-width: 372px;
-    height: 80%;
 }
 
-.pricing-style3 span {
+.aux-color span {
     color: var(--auxiliary-color);
     font: normal 300 46px Open Sans;
     margin-top: 14px;
 }
-.pricing-style3 p {
+.aux-color p {
     font: normal bold 12px Raleway;
     margin-top: 15px;
 }
-
 
 .pricing-list {
     list-style-type: none;
@@ -500,7 +500,6 @@ header {
 }
 
 .btn-pricing {
-    background: var(--secondary-color);
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 20px;
     padding: 1px;
@@ -509,17 +508,15 @@ header {
     transform: translateY(23px);
 }
 
-.btn-pricing2 {
+.btn-prim-color {
     background: var(--primary-color);
-    box-shadow: 5px 10px 14px #07ACE629;
-    border-radius: 20px;
-    padding: 1px;
-    width: 40%;
-    font: normal bold 13px/41px Open Sans;
-    transform: translateY(23px);
 }
 
-.btn-pricing3 {
+.btn-sec-color {
+    background: var(--secondary-color);
+}
+
+.btn-aux {
     background: var(--auxiliary-color);
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 20px;
