@@ -11,6 +11,7 @@
     --white-color: #ffffff;
     --form-text-color: #707070;
     --form-button-color: #07ACE629;
+    --background-color: #F7F7F7;
 }
 
 header {
@@ -121,7 +122,7 @@ header {
     text-align: center;
     font: normal 800 20px/24px Raleway;
     letter-spacing: 6px;
-    color: #000000;
+    color: var(--white-color);
     margin: 14px 0;
 }
 
@@ -129,7 +130,7 @@ header {
     text-align: center;
     font: normal 16px/19px Raleway;
     letter-spacing: 0;
-    color: #A5A5A5;
+    color: var(--gray-details-color);
 }
 
 .achiev-content__theme {
@@ -143,16 +144,16 @@ header {
 .circle {
     width: 65px;
     height: 65px;
-}
-
-.circle-type1 {
-    background-color: var(--secondary-color);
     border-radius: 50%;
     position: relative;
     z-index: 1;
 }
 
-.circle-type1::after {
+.circle-dark {
+    background-color: var(--secondary-color);
+}
+
+.circle-dark::after {
     content: "";
     position: absolute;
     background-image: url("../images/person.png");
@@ -163,14 +164,11 @@ header {
     left: 50%;
 }
 
-.circle-type2 {
+.circle-middle {
     background-color: var(--primary-color);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
 }
 
-.circle-type2::after {
+.circle-middle::after {
     content: "";
     position: absolute;
     background-image: url("../images/eye.png");
@@ -182,14 +180,11 @@ header {
     top: 25%;
 }
 
-.circle-type3 {
+.circle-last {
     background-color: var(--auxiliary-color);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
 }
 
-.circle-type3::after {
+.circle-last::after {
     content: "";
     position: absolute;
     background-image: url("../images/catalog.png");
@@ -202,7 +197,7 @@ header {
 }
 
 .page-reason {
-    background-color: #F7F7F7;
+    background-color: var(--background-color);
 }
 
 .reason-content {
@@ -210,9 +205,6 @@ header {
     flex-direction: column;
     padding-top: 105px;
     padding-bottom: 105px;
-}
-
-.reason-container {
     max-width: 1124px;
     margin: 0 auto;
 }
