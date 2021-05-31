@@ -36,6 +36,17 @@ header {
     height: 80px;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger {
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .page-logo {
     color: var(--primary-color);
     text-decoration: none;
@@ -325,7 +336,6 @@ header {
     width: 100%;
     height: 37rem;
     justify-content: space-between;
-
 }
 
 .specific-column {
@@ -398,7 +408,7 @@ header {
 
 .pricing-box {
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
 }
 
 .pricing-box h2 {
