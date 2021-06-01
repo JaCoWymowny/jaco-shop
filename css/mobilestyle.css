@@ -97,8 +97,62 @@
         height: 27rem;
     }
 
+    .reason-background::after {
+        left: 30%;
+        width: 60%;
+    }
+
     .horizontal-line {
         display: block;
         width: 100%;
+    }
+
+    .pricing-box {
+        padding-bottom: 0;
+    }
+
+    .pricing-content {
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    .pricing-style {
+        max-width: 350px;
+        height: 100%;
+    }
+
+    .pricing-special {
+        margin: 50px 0;
+        max-width: 450px;
+    }
+
+    .help-zone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zone__contact {
+        margin-top: 20px;
+    }
+
+    .zone__register {
+        margin-top: 50px;
+    }
+
+    .form-buttons {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    [type="checkbox"] + label {
+        font: normal 8px/17px Open Sans;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .page-footer {
+        justify-content: space-around;
     }
 }
