@@ -1,0 +1,162 @@
+@media screen and (max-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    header .container {
+        margin: unset;
+    }
+
+    .page-header {
+       width: 62%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        background-color: transparent;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-list {
+        padding: 8px 6px;
+        display: none;
+    }
+
+    .hamburger-list__item {
+        padding: 10px 0;
+    }
+
+    .hamburger-list a {
+        text-decoration: none;
+        color: var(--black-text-color);
+    }
+
+    .hamburger-list a:hover {
+        color: var(--primary-color);
+    }
+
+    .page-logo {
+        font-weight: 800;
+        padding: 22px 0;
+    }
+
+    .reason-content__box {
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .reason-article h2 {
+        width: 100%;
+    }
+
+    .reason-article {
+        text-align: center;
+    }
+
+    .reason-diamond {
+        align-items: unset;
+        left: 10%;
+    }
+
+    .reason-diamond::after {
+        bottom: unset;
+    }
+
+    .reason-wheel {
+        padding-top: 50px;
+    }
+
+    .reason-content__box-specific {
+        flex-direction: column;
+        height: 58rem;
+    }
+
+    .specific-column {
+        width: 100%;
+        height: 27rem;
+    }
+
+    .reason-article2 {
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .reason-article2 h2 {
+        width: 100%;
+    }
+
+    .reason-background {
+        width: 100%;
+        height: 27rem;
+    }
+
+    .reason-background::after {
+        left: 30%;
+        width: 60%;
+    }
+
+    .horizontal-line {
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-box {
+        padding-bottom: 0;
+    }
+
+    .pricing-content {
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    .pricing-style {
+        max-width: 350px;
+        height: 100%;
+    }
+
+    .pricing-special {
+        margin: 50px 0;
+        max-width: 450px;
+    }
+
+    .help-zone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zone__contact {
+        margin-top: 20px;
+    }
+
+    .zone__register {
+        margin-top: 50px;
+    }
+
+    .form-buttons {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    [type="checkbox"] + label {
+        font: normal 8px/17px Open Sans;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .page-footer {
+        justify-content: space-around;
+    }
+}

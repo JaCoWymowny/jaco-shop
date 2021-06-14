@@ -1,0 +1,96 @@
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 880px;
+    }
+
+    .nav-list__item a {
+        letter-spacing: 2px;
+        margin-left: 80px;
+    }
+
+    .page-banner {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .page-banner::before {
+        background-size: contain;
+        bottom: 20%;
+    }
+
+    .reason-content {
+        max-width: 880px;
+        justify-content: center;
+    }
+
+    .reason-article {
+        max-width: 340px;
+    }
+
+    .reason-article h2 {
+        font: normal 32px/40px Raleway;
+        width: 75%;
+    }
+
+    .reason-article p {
+        font: normal 12px/22px Open Sans;
+    }
+
+    .reason-article2 h2 {
+        font: normal 32px/40px Raleway;
+    }
+
+    .reason-article2 p {
+        font: normal 12px/22px Open Sans;
+    }
+
+    .reason-diamond {
+        margin-right: 20px;
+    }
+
+    .reason-wheel {
+        margin-left: 20px;
+    }
+
+    .line-style1 {
+        border: 0.2rem solid var(--secondary-color);
+    }
+
+    .line-style2 {
+        border: 0.2rem solid var(--primary-color);
+    }
+
+    .line-style3 {
+        border: 0.2rem solid var(--auxiliary-color);
+    }
+
+    .pricing-container {
+        max-width: 1000px;
+    }
+
+    .pricing-content {
+        justify-content: space-around;
+    }
+
+    .pricing-style {
+        max-width: 200px;
+    }
+
+    .pricing-special {
+        max-width: 300px;
+    }
+
+    .list-padding1 {
+        padding: 20px 0;
+    }
+
+    .list-padding2 {
+        padding: 20px 0;
+    }
+
+    .pricing-article li {
+        padding-bottom: 14px;
+        font: normal 12px Open Sans;
+    }
+}
