@@ -2,8 +2,7 @@ const choosenList = document.querySelector('.form__options');
 const textField = document.querySelector('#dropdown_select');
 const dropdownImage = document.querySelector('.dropdown_arrow');
 const list = document.querySelector('.dropdown');
-const listElements = document.querySelectorAll('.dropdown li')
-const html = document.querySelector('html');
+const listElements = document.querySelectorAll('.dropdown li');
 
 function toggleList() {
   if (list.style.display === 'none') {
@@ -39,12 +38,6 @@ function changeSpanTextAfterChoose() {
     })
   })
 }
-
-html.addEventListener('click', function(e) {
-  if (e.target !== list && e.target !== choosenList) {
-    list.style.display = 'none';
-  }
-})
 
 choosenList.addEventListener('click', toggleList);
 choosenList.addEventListener('click', changeArrowDirection);

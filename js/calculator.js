@@ -11,9 +11,17 @@ const packageListChoiceText = document.querySelector('#dropdown_select');
 const packageFullList = document.querySelectorAll('.dropdown li');
 const firstCheckbox = document.querySelector('#first-value');
 const secondCheckbox = document.querySelector('#second-value');
+const formCheckbox = document.querySelectorAll('.checkboxs');
 
-
-
+function updateCost() {
+  let sum = 0;
+  formCheckbox.forEach((el) => {
+    if (el.checked) {
+      sum += parseFloat(el.value);
+    }
+  })
+  totalSum.innerHTML = sum;
+}
 
 function showProductCost() {
   let sum = 0;
@@ -62,13 +70,13 @@ function showCheckboxCost() {
   })
 })
 
-
-
 firstNumberInput.addEventListener('input', showProductCost);
 secondNumberInput.addEventListener('input', showOrderCost);
 firstCheckbox.addEventListener('change', showCheckboxCost);
 secondCheckbox.addEventListener('change', showCheckboxCost);
-
+formCheckbox.forEach((el) => {
+  el.addEventListener('change', updateCost);
+})
 
 
 
