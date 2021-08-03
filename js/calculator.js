@@ -20,6 +20,11 @@ function updateCost() {
       sum += parseFloat(el.value);
     }
   })
+  packageFullList.forEach((el) => {
+    if (el.textContent === packageListChoiceText.textContent) {
+      sum += parseFloat(el.value);
+    }
+  })
   totalSum.innerHTML = sum;
 }
 
@@ -76,6 +81,9 @@ firstCheckbox.addEventListener('change', showCheckboxCost);
 secondCheckbox.addEventListener('change', showCheckboxCost);
 formCheckbox.forEach((el) => {
   el.addEventListener('change', updateCost);
+})
+packageFullList.forEach((el) => {
+  el.addEventListener('click', updateCost);
 })
 
 
