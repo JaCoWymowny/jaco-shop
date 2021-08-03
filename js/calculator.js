@@ -12,14 +12,17 @@ const packageFullList = document.querySelectorAll('.dropdown li');
 const firstCheckbox = document.querySelector('#first-value');
 const secondCheckbox = document.querySelector('#second-value');
 
+
+
+
 function showProductCost() {
   let sum = 0;
-  if (firstNumberInput.value <= 0) {
+  if (+firstNumberInput.value <= 0) {
     productLine.style.display = 'none';
   } else {
     productLine.style.display = 'flex';
-    productLine.children[1].textContent = firstNumberInput.value + ' * 5 $';
-    sum = firstNumberInput.value * 5;
+    productLine.children[1].textContent = +firstNumberInput.value + ' * 5 $';
+    sum = +firstNumberInput.value * 5;
   }
   productLine.children[2].textContent = sum + ' $';
 }
@@ -31,34 +34,40 @@ function showOrderCost() {
   } else {
     ordersLine.style.display = 'flex';
     ordersLine.children[1].textContent = secondNumberInput.value + ' * 2 $';
-    sum = secondNumberInput.value * 2;
+    sum = +secondNumberInput.value * 2;
   }
   ordersLine.children[2].textContent = sum + ' $';
 }
-
-
 
 function showCheckboxCost() {
   if (!firstCheckbox.checked) {
     accountingLine.style.display = 'none';
   } else {
     accountingLine.style.display = 'flex';
-    accountingLine.children[2].textContent = firstCheckbox.value  + ' $';
+    accountingLine.children[2].textContent = +firstCheckbox.value  + ' $';
   }
   if (!secondCheckbox.checked) {
     terminalLine.style.display = 'none';
   } else {
     terminalLine.style.display = 'flex';
-    terminalLine.children[2].textContent =secondCheckbox.value + ' $';
+    terminalLine.children[2].textContent = +secondCheckbox.value + ' $';
   }
 }
+
+  packageFullList.forEach((el) => {
+    el.addEventListener('click', function() {
+      packageLine.style.display = 'flex';
+      packageLine.children[1].textContent = el.textContent;
+      packageLine.children[2].textContent = +el.value + ' $';
+  })
+})
+
 
 
 firstNumberInput.addEventListener('input', showProductCost);
 secondNumberInput.addEventListener('input', showOrderCost);
 firstCheckbox.addEventListener('change', showCheckboxCost);
 secondCheckbox.addEventListener('change', showCheckboxCost);
-
 
 
 
@@ -109,13 +118,6 @@ secondCheckbox.addEventListener('change', showCheckboxCost);
 //     }
 //   })
 //
-//   packageFullList.forEach((el) => {
-//     el.addEventListener('click', function() {
-//       packageLine.style.display = 'flex';
-//       packageLine.children[1].textContent = el.textContent;
-//       packageLine.children[2].textContent = el.value + ' $';
-//     })
-//   })
 // }
 // calculator();
 
