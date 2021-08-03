@@ -392,29 +392,36 @@
         <form>
 
           <div class="form__numbers">
-            <input type="number" name="numbers" min="0" placeholder="Products quantity">
+            <input class="numbers_first-field" type="number" oninput="this.value = Math.round(this.value);" name="numbers" min="1" placeholder="Products quantity"/>
           </div>
 
           <div class="form__numbers">
-          <input type="number" name="numbers" min="0" placeholder="Estimated orders in month">
+          <input class="numbers-second-field" type="number" oninput="this.value = Math.round(this.value);" name="numbers" min="1" placeholder="Estimated orders in month"/>
           </div>
 
           <div class="form__options">
-            <select class="closed__image">
-              <option disabled selected>Choose package</option>
-              <option>Basic</option>
-              <option>Professional</option>
-              <option>Premium</option>
-            </select>
+            <span id="dropdown_select">Choose package</span>
+            <img src="images/arrow.png" alt="arrow" class="dropdown_arrow">
+            <ul class="dropdown">
+              <li value="10">Basic</li>
+              <li value="20">Professional</li>
+              <li value="30">Premium</li>
+            </ul>
+<!--            <select class="closed__image">-->
+<!--              <option class="aaa" disabled selected>Choose package</option>-->
+<!--              <option class="aaa">Basic</option>-->
+<!--              <option class="aaa">Professional</option>-->
+<!--              <option class="aaa">Premium</option>-->
+<!--            </select>-->
           </div>
 
           <div class="form__check extra-padding">
-          <input type="checkbox" name="special_value" id="first-value">
+          <input type="checkbox" name="special_value" id="first-value" value="25">
           <label for="first-value">Accounting</label>
           </div>
 
           <div class="form__check extra-padding">
-          <input type="checkbox" name="special_value" id="second-value">
+          <input type="checkbox" name="special_value" id="second-value" value="25">
           <label for="second-value">Rental of a payment terminal</label>
           </div>
 
@@ -425,40 +432,40 @@
 
         <div class="summary_calc summary_products">
           <span>Products</span>
-          <span>Number</span>
-          <span>Total</span>
+          <span>0</span>
+          <span class="a">$</span>
         </div>
         <div class="summary_calc summary_orders">
-          <span>Products</span>
-          <span>Number</span>
-          <span>Total</span>
+          <span>Order</span>
+          <span>0</span>
+          <span class="a">$</span>
         </div>
         <div class="summary_calc summary_package">
-          <span>Products</span>
-          <span>Number</span>
-          <span>Total</span>
+          <span>Package</span>
+          <span>0</span>
+          <span class="a">$</span>
         </div>
         <div class="summary_calc summary_accounting">
-          <span>Products</span>
-          <span>Number</span>
-          <span>Total</span>
+          <span>Accounting</span>
+          <span></span>
+          <span class="a">$</span>
         </div>
         <div class="summary_calc summary_terminal">
-          <span>Products</span>
-          <span>Number</span>
-          <span>Total</span>
+          <span>Terminal</span>
+          <span></span>
+          <span class="a">$</span>
         </div>
         <div class="total_calc">
-          <div class="total_sum">
-          <span>Total</span><span>$$$$</span>
+          <div class="total_line">
+          <span>Total</span><span class="total_sum">$$$$</span>
           </div>
         </div>
 
       </div>
     </div>
     </div>
-
-    <script src="js/toogle.js"></script>
+    <script src="js/dropdownToggle.js"></script>
+    <script src="js/calculator.js"></script>
   </section>
 
 </main>
