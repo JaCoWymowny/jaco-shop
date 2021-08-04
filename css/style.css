@@ -776,7 +776,7 @@ header {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form__numbers {
