@@ -392,31 +392,43 @@
         <form>
 
           <div class="form__numbers">
+
             <input class="numbers_first-field" type="number" oninput="this.value = Math.round(this.value);" name="numbers" min="1" placeholder="Products quantity"/>
+
           </div>
 
           <div class="form__numbers">
-          <input class="numbers-second-field" type="number" oninput="this.value = Math.round(this.value);" name="numbers" min="1" placeholder="Estimated orders in month"/>
+
+            <input class="numbers-second-field" type="number" oninput="this.value = Math.round(this.value);" name="numbers" min="1" placeholder="Estimated orders in month"/>
+
           </div>
 
           <div class="form__options">
+
             <span id="dropdown_select">Choose package</span>
+
             <img src="images/arrow.png" alt="arrow" class="dropdown_arrow">
+
             <ul class="dropdown">
               <li value="10">Basic</li>
               <li value="20">Professional</li>
               <li value="30">Premium</li>
             </ul>
+
           </div>
 
           <div class="form__check extra-padding">
+
           <input type="checkbox" class="checkboxs" name="special_value" id="first-value" value="25">
-          <label for="first-value">Accounting</label>
+            <label for="first-value">Accounting</label>
+
           </div>
 
           <div class="form__check extra-padding">
+
           <input type="checkbox" class="checkboxs" name="special_value" id="second-value" value="25">
-          <label for="second-value">Rental of a payment terminal</label>
+            <label for="second-value">Rental of a payment terminal</label>
+
           </div>
 
         </form>
@@ -425,40 +437,61 @@
       <div class="calculator-results">
 
         <div class="summary_calc summary_products">
+
           <span>Products</span>
           <span>0</span>
-          <span class="a">$</span>
+          <span>$ <span>0</span></span>
+
         </div>
+
         <div class="summary_calc summary_orders">
+
           <span>Order</span>
           <span>0</span>
-          <span class="a">$</span>
+          <span>$ <span>0</span></span>
+
         </div>
+
         <div class="summary_calc summary_package">
+
           <span>Package</span>
           <span>0</span>
-          <span class="a">$</span>
+          <span>$ <span>0</span></span>
+
         </div>
+
         <div class="summary_calc summary_accounting">
+
           <span>Accounting</span>
           <span></span>
-          <span class="a">$</span>
+          <span>$ <span>0</span></span>
+
         </div>
+
         <div class="summary_calc summary_terminal">
+
           <span>Terminal</span>
           <span></span>
-          <span class="a">$</span>
+          <span>$ <span>0</span></span>
+
         </div>
+
         <div class="total_calc">
+
           <div class="total_line">
+
           <span>Total</span>
-          <span>$ <span class="total_sum">777</span></span>
+
+          <span class="bolder">$ <span class="total_sum bolder">0</span></span>
+
           </div>
+
         </div>
 
       </div>
     </div>
     </div>
+
     <script src="js/dropdownToggle.js"></script>
     <script src="js/calculator.js"></script>
   </section>
