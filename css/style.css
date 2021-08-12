@@ -612,11 +612,11 @@ header {
 }
 
 .mail {
-    background-image: url("../images/mail-icon.png");
+    background-image: url("/images/mail-icon.png");
 }
 
 .tele {
-    background-image: url("../images/phone-icon.png");
+    background-image: url("/images/phone-icon.png");
 }
 
 .icons span {
@@ -696,7 +696,7 @@ header {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("../images/checkmark.png");
+    background-image: url("/images/checkmark.png");
     background-size: contain;
     background-repeat: no-repeat;
     top: 25%;
@@ -943,9 +943,9 @@ footer {
 }
 
 .twitter {
-    background-image: url("../images/twitter.png");
+    background-image: url("/images/twitter.png");
 }
 
 .facebook {
-    background-image: url("../images/facebook.png");
+    background-image: url("/images/facebook.png");
 }
