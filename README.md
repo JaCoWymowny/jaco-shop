@@ -22,5 +22,5 @@ Project is created with:
 To run this project, visit this link only or download this project to your own computer:
 
 ```
-https://reverent-perlman-60654a.netlify.app
+https://jaco-shop-site.netlify.app/
 ```
