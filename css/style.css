@@ -33,8 +33,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 80px;
+    max-width: 1352px;
+    margin: 0 auto;
 }
 
 .hidden {
@@ -75,7 +76,6 @@ header {
     padding-bottom: 30px;
     text-decoration: none;
     font: normal normal bold 11px/15px 'Open Sans';
-
 }
 
 .nav-list__item a:hover {
@@ -158,7 +158,7 @@ header {
     text-align: center;
     font: normal 800 20px/24px Raleway;
     letter-spacing: 6px;
-    color: var(--white-color);
+    color: var(--black-text-color);
     margin: 14px 0;
 }
 
