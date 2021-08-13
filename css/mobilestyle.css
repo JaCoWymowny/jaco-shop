@@ -10,15 +10,15 @@
 
     .container {
         margin: 0 auto;
-        max-width: 600px;
-        width: 80%;
+        max-width: 768px;
+        width: 90%;
     }
 
     .page-header {
-       width: 62%;
-       text-align: left;
-       margin: unset;
+       width: 95%;
        display: flex;
+       margin: 0 10px 0 10px;
+       justify-content: space-between;
     }
 
     nav {
@@ -30,8 +30,7 @@
     }
 
     .hamburger-menu {
-        display: flex;
-        margin-left: 15px;
+                display: flex;
     }
 
     .hamburger-list {
@@ -124,6 +123,7 @@
         bottom: unset;
         top: 10%;
         left: -40%;
+        width: 200px;
     }
 
     .reason-wheel {
@@ -136,6 +136,7 @@
         background-size: 170px;
         top: 17px;
         left: 13px;
+        width: 150px;
     }
 
     .reason-content__box-specific {
@@ -188,14 +189,33 @@
         margin-bottom: 200px;
     }
 
+    .pricing-article {
+        padding-top: 22px;
+    }
+
     .pricing-style {
-        max-width: 350px;
-        height: 100%;
+        max-width: 320px;
+        height: 264px;
+    }
+
+    .package-type__content {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    .package-type__offer {
+        align-self: center;
+    }
+
+    .pricing-list {
+        text-align: left;
     }
 
     .pricing-special {
         margin: 50px 0;
-        max-width: 450px;
+        max-width: 370px;
+        height: 265px;
     }
 
     .page-form {
@@ -211,12 +231,30 @@
         margin-top: 20px;
     }
 
+    .zone__contact h2 {
+        font: bold 40px Raleway;
+    }
+
+    .zone__contact p {
+        font: normal 15px/22px Open Sans;
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+
+    .info-icons {
+        flex-direction: column;
+    }
+
+    .icons {
+        padding-top: 10px;
+    }
+
     .zone__register {
         margin-top: 50px;
+        width: 70%;
     }
 
     .form-buttons {
-        justify-content: center;
         margin-bottom: 20px;
     }
 
@@ -232,15 +270,23 @@
         margin-top: 20px;
     }
 
+    .page-calculator {
+        width: 70%;
+    }
+
     .calculator-content {
         flex-direction: column;
         align-items: center;
     }
 
+    .calculator-value {
+        width: 100%;
+    }
+
     .calculator-value form {
         align-items: flex-start;
         width: 115%;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .form__numbers {
@@ -252,9 +298,7 @@
     }
 
     .calculator-results {
-        width: 50%;
-        height: 280px;
-        max-height: 280px;
+        width: 100%;
     }
 
     .summary_calc {
@@ -268,5 +312,7 @@
 
     .page-footer {
         justify-content: space-around;
+        width: 100%;
+        height: 80px;
     }
 }
