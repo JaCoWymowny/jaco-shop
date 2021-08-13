@@ -296,7 +296,7 @@ header {
     background-image: url("../images/macbook2.png");
     background-repeat: no-repeat;
     height: 219px;
-    width: 387px;
+    width: 400px;
     z-index: 0;
     right: 10%;
     bottom: -15%;
@@ -327,7 +327,7 @@ header {
     background-image: url("../images/iphone2.png");
     background-repeat: no-repeat;
     height: 328px;
-    width: 426px;
+    width: 379px;
     z-index: 0;
     top: 0;
     left: 0;
@@ -434,6 +434,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.package-type {
+    padding-bottom: 10px;
 }
 
 .pricing-article {

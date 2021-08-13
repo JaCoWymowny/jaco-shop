@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, maximum-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>JaCo Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +25,10 @@
 
   <div class="page-header container">
 
+    <a href="https://github.com/JaCoWymowny" target="_blank" class="page-logo">
+      JaCoShop
+    </a>
+
     <div class="hamburger-menu">
 
       <button class="hamburger">
@@ -34,49 +38,49 @@
 
       <ul class="hamburger-list">
         <li class="hamburger-list__item">
-          <a href="#">WHY US</a>
+          <a href="#first-section">WHY US</a>
         </li>
 
         <li class="hamburger-list__item">
-          <a href="#">BENEFITS</a>
+          <a href="#second-section">BENEFITS</a>
         </li>
 
         <li class="hamburger-list__item">
-          <a href="#">PRICES</a>
+          <a href="#third-section">PRICES</a>
         </li>
 
         <li class="hamburger-list__item">
-          <a href="#">CONTACT</a>
+          <a href="#fourth-section">CONTACT</a>
         </li>
 
         <li class="hamburger-list__item">
-          <a href="#">CALCULATOR</a>
+          <a href="#fifth-section">CALCULATOR</a>
         </li>
       </ul>
 
     </div>
 
-    <a href="https://github.com/JaCoWymowny" target="_blank" class="page-logo">
-      JaCoShop
-    </a>
-
     <nav>
       <ul class="nav-list">
 
         <li class="nav-list__item">
-          <a href="#">WHY US</a>
+          <a href="#first-section">WHY US</a>
         </li>
 
         <li class="nav-list__item">
-          <a href="#">BENEFITS</a>
+          <a href="#second-section">BENEFITS</a>
         </li>
 
         <li class="nav-list__item">
-          <a href="#">PRICES</a>
+          <a href="#third-section">PRICES</a>
         </li>
 
         <li class="nav-list__item">
-          <a href="#">CONTACT</a>
+          <a href="#fourth-section">CONTACT</a>
+        </li>
+
+        <li class="nav-list__item">
+          <a href="#fifth-section">CALCULATOR</a>
         </li>
 
       </ul>
@@ -105,7 +109,7 @@
 </section>
 
 <main>
-  <section class="page-achiev container">
+  <section class="page-achiev container" id="first-section">
 
     <h2>
       The most popular sales platform in country
@@ -149,7 +153,7 @@
 
   <section class="page-reason">
 
-    <div class="reason-content">
+    <div class="reason-content" id="second-section">
 
       <div class="reason-content__box">
 
@@ -221,7 +225,7 @@
 
   </section>
 
-  <section class="page-pricing">
+  <section class="page-pricing" id="third-section">
 
     <div class="pricing-box pricing-container">
 
@@ -231,9 +235,12 @@
 
         <article class="pricing-article pricing-style secondary-color">
 
-          <h3>Basic</h3>
+          <div class="package-type__content">
+          <div class="package-type__offer">
+            <h3 class="package-type">Basic</h3>
 
-          <span>$0</span>
+            <span>$0</span>
+          </div>
 
           <ul class="pricing-list list-padding1">
             <li class="package">100 MB HDD</li>
@@ -247,31 +254,40 @@
             <li class="no-choice">Full support</li>
           </ul>
 
+          </div>
+
           <button class="btn btn-pricing btn-sec-color" type="button">
             Begin
           </button>
+
 
         </article>
 
         <article class="pricing-article pricing-special">
 
-          <h3>Professional</h3>
+          <div class="package-type__content">
 
-          <span>$25</span>
+            <div class="package-type__offer">
+              <h3 class="package-type">Professional</h3>
 
-          <p>Limited offer</p>
+              <span>$25</span>
 
-          <ul class="pricing-list list-padding2">
-            <li class="package">500 MB HDD</li>
+              <p>Limited offer</p>
+            </div>
 
-            <li class="package">2 Subdomain</li>
+            <ul class="pricing-list list-padding2">
+              <li class="package">500 MB HDD</li>
 
-            <li class="package">5 E-mails</li>
+              <li class="package">2 Subdomain</li>
 
-            <li class="package">One years license</li>
+              <li class="package">5 E-mails</li>
 
-            <li class="no-choice">Full support</li>
-          </ul>
+              <li class="package">One years license</li>
+
+              <li class="no-choice">Full support</li>
+            </ul>
+
+          </div>
 
           <button class="btn btn-pricing btn-prim-color" type="button">
             Begin
@@ -281,23 +297,29 @@
 
         <article class="pricing-article pricing-style aux-color">
 
-          <h3>Premium</h3>
+          <div class="package-type__content">
 
-          <span>$60</span>
+            <div class="package-type__offer">
+              <h3 class="package-type">Premium</h3>
 
-          <p>Limited offer</p>
+              <span>$60</span>
 
-          <ul class="pricing-list list-padding1">
-            <li class="package">2 GB HDD</li>
+              <p>Limited offer</p>
+            </div>
 
-            <li class="package">5 Subdomain</li>
+            <ul class="pricing-list list-padding1">
+              <li class="package">2 GB HDD</li>
 
-            <li class="package">20 E-mails</li>
+              <li class="package">5 Subdomain</li>
 
-            <li class="package">Two years license</li>
+              <li class="package">20 E-mails</li>
 
-            <li class="package">Full support</li>
-          </ul>
+              <li class="package">Two years license</li>
+
+              <li class="package">Full support</li>
+            </ul>
+
+          </div>
 
           <button class="btn btn-pricing btn-aux" type="button">
             Begin
@@ -311,7 +333,7 @@
 
   </section>
 
-  <section class="page-form">
+  <section class="page-form" id="fourth-section">
 
     <div class="help-zone">
 
@@ -382,7 +404,7 @@
 
   </section>
 
-  <section class="page-calculator">
+  <section class="page-calculator" id="fifth-section">
 
     <div class="calculator calculator-tittle">
 
