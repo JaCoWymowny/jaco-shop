@@ -16,7 +16,7 @@ Check this out!
 Project is created with:
 * Html
 * CSS
-* Pure Javascript mostly
+* Pure Javascript
 
 ## Setup
 To run this project, visit this link only or download this project to your own computer:
